@@ -1,9 +1,10 @@
-package com.poker.backEnd.config;
+package com.poker.backend.config;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
 import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
 import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry;
-import com.poker.backEnd.handler.GameWebSocketHandler; 
+
+import com.poker.backend.handler.GameWebSocketHandler; 
 
 @Configuration
 @EnableWebSocket
