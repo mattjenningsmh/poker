@@ -1,8 +1,6 @@
 package com.poker.backend.handler;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
 
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
@@ -11,7 +9,6 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
 
 import tools.jackson.databind.JsonNode;
 import tools.jackson.databind.ObjectMapper;
-import tools.jackson.databind.node.ArrayNode;
 import tools.jackson.databind.node.ObjectNode;
 
 public class GameWebSocketHandler extends TextWebSocketHandler {
