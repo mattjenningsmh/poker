@@ -1,0 +1,8 @@
+.room-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.room-card {
+    width: 100%;
+}

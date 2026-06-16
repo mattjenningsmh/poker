@@ -1,5 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Button } from "react";
 import { fetchRooms } from "./api/roomApi";
+import JoinRoomButton from "./ui-components/Miscellaneous/JoinRoomButton";
+import './App.css';
+import RoomList from "./ui-components/RoomList";
 
 function App() {
   const [rooms, setRooms] = useState([]);
@@ -16,7 +19,7 @@ function App() {
         setLoading(false);
       })
       .catch((err) => {
-        if (err.name === 'AbortError') return; // request was cancelled
+        if (err.name === "AbortError") return; // request was cancelled
         setError(err.message || "Failed to load rooms");
         setLoading(false);
       });
@@ -28,14 +31,9 @@ function App() {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div>
-      <h1>Available Rooms</h1>
-      <ul>
-        {rooms.map((room, idx) => (
-          <li key={idx}>{room}</li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <RoomList rooms={rooms}/>
+    </>
   );
 }
 
