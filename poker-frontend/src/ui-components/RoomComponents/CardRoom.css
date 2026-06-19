@@ -1,0 +1,12 @@
+.table {
+    width: auto;
+}
+
+.card-room-container {
+    display: flex;
+    flex-direction: column;   /* Stacks the table and button vertically, puts everything in the same column */
+    align-items: center;      /* Centers them horizontally */
+    gap: 20px;       
+    height: 100dvh;         /* Adds neat spacing between the table and the button */
+    box-sizing: border-box;
+}
