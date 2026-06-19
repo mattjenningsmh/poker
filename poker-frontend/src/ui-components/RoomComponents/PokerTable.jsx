@@ -1,4 +1,4 @@
-import "./PokerTable.css";
+import './PokerTable.css';
 
 function PokerTable() {
   return (
