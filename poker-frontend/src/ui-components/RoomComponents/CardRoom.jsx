@@ -9,10 +9,12 @@ function CardRoom({ onLeaveClicked }) {
       welcome to the card room!
       <div className="poker-table-container">
         <PokerTable className="table" />
-        <Player />
-      </div>
-      <div>
-        testing...
+        <div className="player bottom"><Player /></div>
+        <div className="player top"><Player /></div>
+        <div className="player left-1"><Player /></div>
+        <div className="player left-2"><Player /></div>
+        <div className="player right-1"><Player /></div>
+        <div className="player right-2"><Player /></div>
       </div>
       <LeaveRoomButton onBtnClick={onLeaveClicked} />
     </div>

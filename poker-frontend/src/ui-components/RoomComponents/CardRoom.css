@@ -1,12 +1,55 @@
-.table {
-    width: auto;
-}
-
 .card-room-container {
     display: flex;
     flex-direction: column;   /* Stacks the table and button vertically, puts everything in the same column */
     align-items: center;      /* Centers them horizontally */
-    gap: 20px;       
+    row-gap: 40px;      
     height: 100dvh;         /* Adds neat spacing between the table and the button */
     box-sizing: border-box;
+}
+
+
+/* 💡 This container needs to hold the scale frame now */
+.poker-table-container {
+    position: relative;       /* Anchor for your absolute positioned <Player /> elements */
+    height: 60dvh;            /* Forces the wrapper to take up 60% of the screen height */
+    aspect-ratio: 5 / 10;
+}
+
+.table {
+    width: 100%; 
+    height: 100%;
+}
+.player {
+    position: absolute;
+    transform: translate(-50%, -50%); /* Centers the player asset directly on its coordinate point */
+    white-space: nowrap;               /* Prevents usernames from wrapping awkwardly */
+}
+.bottom{
+    top: 102%;
+    left: 50%;
+}
+
+.top {
+    top: -2%;
+    left: 50%;
+}
+
+.left-1 {
+    top: 70%; 
+    left: -10%;
+}
+
+.left-2 {
+    top: 30%;
+    left: -10%;
+} 
+
+.right-1 {
+    top: 70%;
+    left: 110%
+}
+
+.right-2 {
+    top: 30%; 
+    left: 110%;
 }
