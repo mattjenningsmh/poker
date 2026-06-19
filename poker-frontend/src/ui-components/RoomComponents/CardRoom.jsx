@@ -1,14 +1,10 @@
-import Player from "../Player";
-import DefaultCardBack from "./Room/CardBack";
+import LeaveRoomButton from "../Miscellaneous/LeaveRoomButton"
 
-function CardRoom({ players = [] }) {
+function CardRoom( {onLeaveClicked} ) {
   return (
     <div>
-      <ul>
-        {players.map((player, number) => (
-          <li key={number}>{player}</li>
-        ))}
-      </ul>
+      welcome to the card room!
+      <LeaveRoomButton onBtnClick={onLeaveClicked} />
     </div>
   );
 }

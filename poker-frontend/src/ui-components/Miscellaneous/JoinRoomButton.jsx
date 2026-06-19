@@ -1,8 +1,8 @@
 import './JoinRoomButton.css';
 
-function JoinRoomButton() {
+function JoinRoomButton({onBtnClick}) {
   return (
-    <button className="join-room-button">
+    <button className="join-room-button" onClick={onBtnClick}>
       Join Room
     </button>
   );
