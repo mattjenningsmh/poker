@@ -1,5 +1,5 @@
 function Player() {
-  return <div>this is a player.</div>;
+  return <div>player</div>;
 }
 
 export default Player;
