@@ -11,11 +11,14 @@
 /* 💡 This container needs to hold the scale frame now */
 .poker-table-container {
     position: relative;       /* Anchor for your absolute positioned <Player /> elements */
-    height: 60dvh;            /* Forces the wrapper to take up 60% of the screen height */
-    aspect-ratio: 5 / 10;
+    height: 70dvh;            /* Forces the wrapper to take up 60% of the screen height */
+    aspect-ratio: 2 / 1;
+    max-width: 100%; 
+    box-sizing: border-box; 
+    padding: 20px;
 }
 
-.table {
+.poker-table {
     width: 100%; 
     height: 100%;
 }
@@ -23,33 +26,44 @@
     position: absolute;
     transform: translate(-50%, -50%); /* Centers the player asset directly on its coordinate point */
     white-space: nowrap;               /* Prevents usernames from wrapping awkwardly */
+    height: 5dvh;
+    width: 5dvh;
 }
-.bottom{
-    top: 102%;
-    left: 50%;
+.bottom-1{
+    top: 100%;
+    left: 25%;
+}
+.bottom-2 {
+    top: 100%;
+    left: 75%;
 }
 
-.top {
-    top: -2%;
-    left: 50%;
+.top-1 {
+    top: 0%;
+    left: 25%;
+}
+
+.top-2 {
+    top: 0%;
+    left: 75%;
 }
 
 .left-1 {
-    top: 70%; 
-    left: -10%;
+    top: 75%; 
+    left: 3%;
 }
 
 .left-2 {
-    top: 30%;
-    left: -10%;
+    top: 25%;
+    left: 3%;
 } 
 
 .right-1 {
-    top: 70%;
-    left: 110%
+    top: 25%;
+    left: 97%
 }
 
 .right-2 {
-    top: 30%; 
-    left: 110%;
+    top: 75%; 
+    left: 97%;
 }

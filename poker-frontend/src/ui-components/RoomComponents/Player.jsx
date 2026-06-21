@@ -1,5 +1,9 @@
 function Player() {
-  return <div>player</div>;
+  return (
+    <svg viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="50" fill="white" />
+    </svg>
+  );
 }
 
 export default Player;
