@@ -1,6 +1,5 @@
-import { useState, useEffect, Button } from "react";
+import { useState, useEffect } from "react";
 import { fetchRooms } from "./api/roomApi";
-import JoinRoomButton from "./ui-components/Miscellaneous/JoinRoomButton";
 import CardRoom from "./ui-components/RoomComponents/CardRoom"
 import './App.css';
 import RoomList from "./ui-components/RoomList";
@@ -9,17 +8,17 @@ function App() {
   const [rooms, setRooms] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [roomJoined, setRoomJoined] = useState(false); 
+  const [roomJoined, setRoomJoined] = useState(false);
 
   const joinRoomClicked = () => {
-    setRoomJoined(true); 
+    setRoomJoined(true);
   };
   const leaveRoomClicked = () => {
     setRoomJoined(false);
   };
   useEffect(() => {
     console.log(`roomJoined value: ${roomJoined}`);
-  }, [roomJoined]); 
+  }, [roomJoined]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -44,7 +43,7 @@ function App() {
 
   return (
     <>
-      {roomJoined ? (<CardRoom onLeaveClicked={leaveRoomClicked}/>) : (<RoomList rooms={rooms} onRoomClicked={joinRoomClicked}/>)}
+      {roomJoined ? (<CardRoom onLeaveClicked={leaveRoomClicked} />) : (<RoomList rooms={rooms} onRoomClicked={joinRoomClicked} />)}
     </>
   );
 }

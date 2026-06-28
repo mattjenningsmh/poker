@@ -10,7 +10,6 @@ function PokerTable() {
         x="0"
         y="0"
         rx="1"
-        ry="1"
       />
       this text should not be showing.
     </svg>

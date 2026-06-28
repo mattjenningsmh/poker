@@ -1,4 +1,4 @@
-function Player() {
+function Seat() {
   return (
     <svg viewBox="0 0 100 100">
       <circle cx="50" cy="50" r="50" fill="white" />
@@ -6,4 +6,4 @@ function Player() {
   );
 }
 
-export default Player;
+export default Seat;

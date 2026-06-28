@@ -1,0 +1,7 @@
+.cardRank {
+    font-family: Georgia, serif, 'Times New Roman';
+}
+
+.invert {
+    transform: rotate(180deg);
+}
